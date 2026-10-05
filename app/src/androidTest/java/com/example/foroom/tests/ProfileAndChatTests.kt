@@ -49,8 +49,11 @@ class ProfileAndChatTests {
         profileSteps.changePassword(newPassword)
 
         loginSteps.openLoginScreen()
+
         loginSteps.login(username, newPassword)
         loginSteps.verifyHomeScreen()
+
+        // Restore the original password for independent test runs
         profileSteps.openProfile()
         profileSteps.openChangePassword()
         profileSteps.changePassword(currentPassword)

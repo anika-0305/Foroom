@@ -14,6 +14,7 @@ class ChatSteps {
 
     fun createChat(chatName: String) {
         createChatPage.enterChatName(chatName)
+        createChatPage.selectChatImage()
         createChatPage.clickCreateChat()
     }
 
